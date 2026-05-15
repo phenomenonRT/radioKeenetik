@@ -1,0 +1,4 @@
+github.com/gorilla/mux v1.8.0 h1:i40ztqXznAHQm4S1iLLGQyeK8D862PSGu1TtY71n9Q=
+github.com/gorilla/mux v1.8.0/go.mod h1:DVbg23sWSpwqqkP+4chxFIRNpNcmLRy7ZRntzKL1xQ=
+github.com/gorilla/websocket v1.5.0 h1:PPwGk2jz7EePpoHN/+ClbMV6SPago/0M3bNc8FQ5Yz=
+github.com/gorilla/websocket v1.5.0/go.mod h1:E4oJ5QMkuiNXMWy0loSyNxExICltFsKktsYWWWK08E=
