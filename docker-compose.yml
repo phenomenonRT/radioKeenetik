@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  radioKeenetik:
+    build: .
+    container_name: radioKeenetik
+    ports:
+      - "8080:8080"
+    environment:
+      - LISTEN_ADDR=0.0.0.0:8080
+    restart: unless-stopped
+    networks:
+      - radio-network
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:8080/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+networks:
+  radio-network:
+    driver: bridge
